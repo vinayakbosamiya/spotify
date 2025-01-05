@@ -17,7 +17,7 @@
 
 async function getsongs() {
 
-    let song = await fetch("http://127.0.0.1:5500/songs/") // fetch the songs from the server
+    let song = await fetch("https://github.com/vinayakbosamiya/spotify/tree/master/spotify/songs/") // fetch the songs from the server
     let response = await song.text(); // get the response in text format
     // console.log(response)
     let div = document.createElement("div"); // create a div element
@@ -39,7 +39,7 @@ async function getsongs() {
 // let audio = new Audio("/songs/" + track)
 let currentSong = new Audio();
 const playMusic = (track, pause = false) => {
-    currentSong.src = "/songs/" + track // set the source of the audio 
+    currentSong.src = "https://github.com/vinayakbosamiya/spotify/tree/master/spotify/songs/" + track // set the source of the audio 
     // console.log(!pause)
     if (!pause) {
         play.src = "pause.svg";
